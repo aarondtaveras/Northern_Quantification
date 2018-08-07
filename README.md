@@ -1,17 +1,23 @@
-# DNA_Normalization
-A general purpose application that computes useful information about Northern Blot Analyses.
+# Norther_Quantification
+A general purpose application that computes and quantifies useful information about Northern Blot Analyses.
 
 # Build Instructions:
 Run `g++ main.cpp` to produce your executable. 
-Run the executable with the input data as follows: `./exe.out <data.csv> `. All given input data MUST be cleaned to achieve the proper results, and be in a `.csv` format. 
+
+Run the executable with the input data as follows: `./exe.out <data.csv> `. 
+
+All given input data MUST be cleaned to achieve the proper results, and be in a `.csv` format. 
 
 # Run-time Instructions: 
 
 Use the following commands to compute statistics:
   `b/gapdh` - Computes band over gapdh per each trial.
+  
   `tscore` - Computes t scores for band over gapdh per trial.
+  
   `average < tscore || m/area || b/gapdh >` - Computes the average for the given argument. Arguments ARE case/space-sensitive.
-  `extract <output.txt>` - Extracts current computed data to a text file named "results.txt". The file is overwritten by default, and is written to "results.txt" by default.
+  
+  `extract <output.txt>` - Extracts current computed data to a text file named "results.txt". The file is overwritten by        default, and is written to "results.txt" by default.
 
 # Cleaned Data:
 
