@@ -1,4 +1,4 @@
-# Norther_Quantification
+# Northern_Quantification
 A general purpose application that computes and quantifies useful information about Northern Blot Analyses.
 
 # Build Instructions:
