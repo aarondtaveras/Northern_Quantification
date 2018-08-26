@@ -6,6 +6,10 @@
 #include <vector>
 #include <fstream>
 #include <iomanip>
+#include <QApplication>
+#include <QCharts>
+#include "mainwindow.h"
+
 
 using namespace std;
 
@@ -83,7 +87,7 @@ void export_to_csv(ostream & o,vector<Data> trials){
 
 int main(int argc, char * argv [])
 {
-	
+
 	ifstream input;
 	ofstream output;
 
@@ -148,10 +152,15 @@ int main(int argc, char * argv [])
 	}
 
 	
-
 	// for(auto & d: trials){
 	// 	cout << d.probe << endl; 
 	// }
+	QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    
+    return a.exec();
+
 
 	input.close();
 	output.close();
